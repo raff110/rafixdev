@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVault Mobile Chat | Project</title>
+    <link href="vendor/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="vendor/js/tailwindcss.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        neon: '#06b6d4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-200 antialiased project-shell">
+    <header class="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/80 backdrop-blur-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 tracking-wider">RAFIF<span class="text-white">.</span></a>
+            <div class="flex items-center gap-4">
+                <a href="index.html#projects" class="text-sm text-gray-300 hover:text-cyan-400 transition-colors">Kembali</a>
+                <a href="index.html#contact" class="px-4 py-2 rounded-lg bg-cyan-500 text-slate-900 font-bold hover:bg-cyan-400 transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <section class="project-hero rounded-3xl border border-slate-800 p-8 md:p-12">
+            <div class="grid lg:grid-cols-[1.3fr_0.7fr] gap-8 items-center">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/20 text-emerald-300 text-xs font-bold uppercase tracking-[0.2em]">Android & Security</span>
+                    <h1 class="mt-6 text-4xl md:text-5xl font-black text-white leading-tight">SecureVault Mobile Chat</h1>
+                    <p class="mt-6 text-lg text-slate-300 leading-relaxed">
+                        Aplikasi mobile untuk komunikasi aman yang menonjunjung privasi pengguna, perlindungan data, dan pengalaman chat yang sederhana namun kuat.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-emerald-300 text-sm">Android</span>
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-emerald-300 text-sm">Security</span>
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-emerald-300 text-sm">UI/UX</span>
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-emerald-300 text-sm">Mobile</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="glass rounded-3xl border border-slate-700 overflow-hidden">
+                        <img src="images/project-2.svg" alt="Preview project 2" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-emerald-400 stat-number" data-target="100" data-suffix="%">0%</div>
+                        <p class="mt-2 text-sm text-slate-300">Privasi fokus</p>
+                    </div>
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-cyan-400 stat-number" data-target="2" data-suffix="x">0x</div>
+                        <p class="mt-2 text-sm text-slate-300">Efisiensi alur</p>
+                    </div>
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-violet-400 stat-number" data-target="24" data-suffix="/7">0/7</div>
+                        <p class="mt-2 text-sm text-slate-300">Akses aman</p>
+                    </div>
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-yellow-400 stat-number" data-target="7" data-suffix="k">0k</div>
+                        <p class="mt-2 text-sm text-slate-300">Potensi pengguna</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 grid lg:grid-cols-3 gap-8">
+            <div class="glass rounded-2xl p-8 border border-slate-700 lg:col-span-2">
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <button class="project-tab-btn active border border-slate-700 rounded-full px-4 py-2 text-sm text-slate-300 hover:text-emerald-300 transition" data-tab-target="overview">Overview</button>
+                    <button class="project-tab-btn border border-slate-700 rounded-full px-4 py-2 text-sm text-slate-300 hover:text-emerald-300 transition" data-tab-target="challenge">Challenge</button>
+                    <button class="project-tab-btn border border-slate-700 rounded-full px-4 py-2 text-sm text-slate-300 hover:text-emerald-300 transition" data-tab-target="result">Result</button>
+                </div>
+
+                <div class="project-tab-panel" data-tab-panel="overview">
+                    <h2 class="text-2xl font-bold text-white mb-4">Overview</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Project ini dirancang untuk menangani kebutuhan komunikasi yang aman. Fokus saya ada pada kenyamanan penggunaan, struktur chat yang rapi, serta perlindungan terhadap ancaman umum seperti pengecekan data yang tidak sah dan kebocoran informasi sensitif.
+                    </p>
+                </div>
+
+                <div class="project-tab-panel hidden" data-tab-panel="challenge">
+                    <h2 class="text-2xl font-bold text-white mb-4">Challenge</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Tantangan utamanya adalah menyeimbangkan antara keamanan dan pengalaman pengguna. Banyak aplikasi keamanan kerap terlihat kaku, sehingga saya berusaha membuat interface tetap fokus, modern, dan mudah digunakan untuk pengguna umum.
+                    </p>
+                </div>
+
+                <div class="project-tab-panel hidden" data-tab-panel="result">
+                    <h2 class="text-2xl font-bold text-white mb-4">Result</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Hasil akhirnya adalah aplikasi yang terasa profesional, aman, dan mudah dioperasikan. Struktur chat yang bersih serta pengelolaan status dan keamanan membuat aplikasi lebih dapat dipercaya oleh pengguna.
+                    </p>
+                </div>
+            </div>
+
+            <aside class="glass rounded-2xl p-8 border border-slate-700">
+                <h3 class="text-xl font-bold text-white mb-5">Project Snapshot</h3>
+                <ul class="space-y-4 text-slate-300 text-sm">
+                    <li class="flex justify-between border-b border-slate-700 pb-2"><span>Periode</span><span class="text-white">2025</span></li>
+                    <li class="flex justify-between border-b border-slate-700 pb-2"><span>Jenis</span><span class="text-white">Mobile App</span></li>
+                    <li class="flex justify-between border-b border-slate-700 pb-2"><span>Stack</span><span class="text-white">Android / Security</span></li>
+                    <li class="flex justify-between"><span>Focus</span><span class="text-white">Privasi & Trust</span></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="mt-16 grid md:grid-cols-2 gap-8">
+            <div class="glass rounded-2xl p-8 border border-slate-700">
+                <h2 class="text-2xl font-bold text-white mb-5">Fitur Utama</h2>
+                <ul class="space-y-3 text-slate-300 list-disc list-inside">
+                    <li>Desain chat modern dan sederhana</li>
+                    <li>Alur komunikasi yang fokus pada kemudahan penggunaan</li>
+                    <li>Penekanan pada keamanan data dan privasi pengguna</li>
+                    <li>UI yang nyaman digunakan dalam aktivitas harian</li>
+                </ul>
+            </div>
+            <div class="glass rounded-2xl p-8 border border-slate-700">
+                <h2 class="text-2xl font-bold text-white mb-5">Teknologi Diterapkan</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-emerald-300">Android</span>
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-emerald-300">Java/Kotlin</span>
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-emerald-300">Security</span>
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-emerald-300">UX Research</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <a href="index.html" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-900 font-bold hover:opacity-95 transition">
+                <i class="fas fa-arrow-left"></i>
+                Kembali ke Portofolio
+            </a>
+        </section>
+    </main>
+
+    <script src="vendor/js/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

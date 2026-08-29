@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Environment Node | Project</title>
+    <link href="vendor/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="vendor/js/tailwindcss.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        neon: '#06b6d4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-200 antialiased project-shell">
+    <header class="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/80 backdrop-blur-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 tracking-wider">RAFIF<span class="text-white">.</span></a>
+            <div class="flex items-center gap-4">
+                <a href="index.html#projects" class="text-sm text-gray-300 hover:text-cyan-400 transition-colors">Kembali</a>
+                <a href="index.html#contact" class="px-4 py-2 rounded-lg bg-cyan-500 text-slate-900 font-bold hover:bg-cyan-400 transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <section class="project-hero rounded-3xl border border-slate-800 p-8 md:p-12">
+            <div class="grid lg:grid-cols-[1.3fr_0.7fr] gap-8 items-center">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/15 border border-yellow-400/20 text-yellow-300 text-xs font-bold uppercase tracking-[0.2em]">IoT & Embedded</span>
+                    <h1 class="mt-6 text-4xl md:text-5xl font-black text-white leading-tight">Smart Environment Node</h1>
+                    <p class="mt-6 text-lg text-slate-300 leading-relaxed">
+                        Sistem pemantauan lingkungan yang mampu membaca data sensor dan mengubahnya menjadi pandangan real-time agar kondisi ruangan lebih terkontrol dan aman.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-yellow-300 text-sm">Arduino</span>
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-yellow-300 text-sm">C++</span>
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-yellow-300 text-sm">Node.js</span>
+                        <span class="px-4 py-2 rounded-full border border-slate-700 bg-slate-900/60 text-yellow-300 text-sm">Dashboard</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="glass rounded-3xl border border-slate-700 overflow-hidden">
+                        <img src="images/project-3.svg" alt="Preview project 3" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-yellow-400 stat-number" data-target="24" data-suffix="/7">0/7</div>
+                        <p class="mt-2 text-sm text-slate-300">Monitoring</p>
+                    </div>
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-cyan-400 stat-number" data-target="12" data-suffix="x">0x</div>
+                        <p class="mt-2 text-sm text-slate-300">Lebih cepat</p>
+                    </div>
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-emerald-400 stat-number" data-target="98" data-suffix="%">0%</div>
+                        <p class="mt-2 text-sm text-slate-300">Ketersediaan</p>
+                    </div>
+                    <div class="metric-card glass rounded-2xl p-5 border border-slate-700">
+                        <div class="text-3xl font-black text-violet-400 stat-number" data-target="5" data-suffix="s">0s</div>
+                        <p class="mt-2 text-sm text-slate-300">Response time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 grid lg:grid-cols-3 gap-8">
+            <div class="glass rounded-2xl p-8 border border-slate-700 lg:col-span-2">
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <button class="project-tab-btn active border border-slate-700 rounded-full px-4 py-2 text-sm text-slate-300 hover:text-yellow-300 transition" data-tab-target="overview">Overview</button>
+                    <button class="project-tab-btn border border-slate-700 rounded-full px-4 py-2 text-sm text-slate-300 hover:text-yellow-300 transition" data-tab-target="challenge">Challenge</button>
+                    <button class="project-tab-btn border border-slate-700 rounded-full px-4 py-2 text-sm text-slate-300 hover:text-yellow-300 transition" data-tab-target="result">Result</button>
+                </div>
+
+                <div class="project-tab-panel" data-tab-panel="overview">
+                    <h2 class="text-2xl font-bold text-white mb-4">Overview</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Proyek ini menghubungkan perangkat keras ke visualisasi data melalui web dashboard. Sensor membaca kondisi sekitar, data diproses oleh mikrokontroler, lalu disajikan dalam format yang mudah dibaca agar pengguna dapat tahu perubahan lingkungan dengan cepat.
+                    </p>
+                </div>
+
+                <div class="project-tab-panel hidden" data-tab-panel="challenge">
+                    <h2 class="text-2xl font-bold text-white mb-4">Challenge</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Tantangan utamanya adalah menjaga stabilitas transmisi data dari perangkat fisik ke sistem digital. Persyaratan untuk akurasi, kecepatan, dan keandalan sangat penting karena data lingkungan harus bisa diinterpretasikan dengan cepat dan konsisten.
+                    </p>
+                </div>
+
+                <div class="project-tab-panel hidden" data-tab-panel="result">
+                    <h2 class="text-2xl font-bold text-white mb-4">Result</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Solusinya menghasilkan sistem yang lebih terstruktur, lebih responsif, dan lebih siap dikembangkan ke skala yang lebih besar. Hasilnya mampu menunjukkan potensi pemantauan lingkungan yang efektif untuk berbagai kebutuhan industri atau smart environment.
+                    </p>
+                </div>
+            </div>
+
+            <aside class="glass rounded-2xl p-8 border border-slate-700">
+                <h3 class="text-xl font-bold text-white mb-5">Project Snapshot</h3>
+                <ul class="space-y-4 text-slate-300 text-sm">
+                    <li class="flex justify-between border-b border-slate-700 pb-2"><span>Periode</span><span class="text-white">2025</span></li>
+                    <li class="flex justify-between border-b border-slate-700 pb-2"><span>Jenis</span><span class="text-white">Embedded IoT</span></li>
+                    <li class="flex justify-between border-b border-slate-700 pb-2"><span>Stack</span><span class="text-white">Arduino / JS</span></li>
+                    <li class="flex justify-between"><span>Focus</span><span class="text-white">Monitoring Real-time</span></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="mt-16 grid md:grid-cols-2 gap-8">
+            <div class="glass rounded-2xl p-8 border border-slate-700">
+                <h2 class="text-2xl font-bold text-white mb-5">Fitur Utama</h2>
+                <ul class="space-y-3 text-slate-300 list-disc list-inside">
+                    <li>Sistem monitoring sensor untuk suhu, gas, dan gerak</li>
+                    <li>Hubungan data real-time dari hardware ke dashboard</li>
+                    <li>Struktur pemrosesan yang siap dikembangkan lebih lanjut</li>
+                    <li>Solusi yang relevan untuk smart environment atau ruangan</li>
+                </ul>
+            </div>
+            <div class="glass rounded-2xl p-8 border border-slate-700">
+                <h2 class="text-2xl font-bold text-white mb-5">Teknologi Diterapkan</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-yellow-300">C++</span>
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-yellow-300">Arduino</span>
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-yellow-300">Node.js</span>
+                    <span class="px-3 py-2 rounded-full text-xs bg-slate-800 border border-slate-700 text-yellow-300">Web Dashboard</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <a href="index.html" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-900 font-bold hover:opacity-95 transition">
+                <i class="fas fa-arrow-left"></i>
+                Kembali ke Portofolio
+            </a>
+        </section>
+    </main>
+
+    <script src="vendor/js/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

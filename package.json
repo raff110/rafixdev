@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-rafif",
+  "version": "1.0.0",
+  "description": "Fullstack Portfolio dengan Local Resources",
+  "main": "server.js",
+  "scripts": {
+    "setup": "node setup_vendors.js",
+    "start": "node server.js",
+    "dev:cf": "npx wrangler pages dev public --compatibility-date=2024-01-01",
+    "deploy:cf": "npx wrangler pages deploy public --project-name portfolio-rafif --branch main"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}
